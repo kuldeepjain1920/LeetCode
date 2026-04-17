@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/kuldeepjain1920/LeetCode/tree/master/0001-two-sum) |
+| [0242-valid-anagram](https://github.com/kuldeepjain1920/LeetCode/tree/master/0242-valid-anagram) |
 ## Two Pointers
 |  |
 | ------- |
@@ -20,8 +21,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0125-valid-palindrome](https://github.com/kuldeepjain1920/LeetCode/tree/master/0125-valid-palindrome) |
+| [0242-valid-anagram](https://github.com/kuldeepjain1920/LeetCode/tree/master/0242-valid-anagram) |
 ## Dynamic Programming
 |  |
 | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/kuldeepjain1920/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
+## Sorting
+|  |
+| ------- |
+| [0242-valid-anagram](https://github.com/kuldeepjain1920/LeetCode/tree/master/0242-valid-anagram) |
 <!---LeetCode Topics End-->

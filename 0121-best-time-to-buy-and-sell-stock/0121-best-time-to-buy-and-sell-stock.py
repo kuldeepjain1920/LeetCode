@@ -5,7 +5,9 @@ class Solution:
         for price in prices:
             if price < lowest:
                 lowest = price
-            profit = max(profit, price-lowest)
+            ##profit = max(profit, price-lowest)
+            if price-lowest > profit:
+                profit = price-lowest
         return profit
 
         

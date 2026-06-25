@@ -1,6 +1,5 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        """
         if len(s) != len(t):
             return False
 
@@ -10,7 +9,15 @@ class Solution:
             tMap[t[i]] = tMap.get(t[i], 0) + 1
         
         return sMap == tMap
-        """
 
-        return Counter(s) == Counter(t)
+        ### return Counter(s) == Counter(t)  ## Solution 2 ##
+        
+        """
+        ## Solution 3 ##
+        This is not good solution. Runtime and Memory usage high
+        ### From the class notes
+        s = "".join(sorted(s))
+        t = "".join(sorted(t))
+        return s == t
+        """
         

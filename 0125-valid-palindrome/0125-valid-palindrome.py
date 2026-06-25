@@ -15,4 +15,7 @@ class Solution:
         
         return True
 
-        
+        """
+        cleaned_s = [c for c in s.lower() if c.isalnum()]
+        return cleaned_s == cleaned_s[::-1]
+        """

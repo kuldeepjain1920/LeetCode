@@ -1,5 +1,9 @@
 class Solution:
     def maxArea(self, height: List[int]) -> int:
+        """
+        ## My version
+        ## Runtime beats 92.11
+        ## Memory beats 37.18%
         left = 0
         right = len(height) - 1
         area = 0
@@ -11,6 +15,24 @@ class Solution:
                 left += 1
 
         return area
+        """
+
+        ## Cleaner and more readable code
+        left, right = 0, len(height) - 1
+        max_area = 0
+
+        while left <= right:
+            width = right - left
+            area = width * min( height[left], height[right])
+            max_area = max(max_area, area)
+
+            #Move the SHORTER pointer inwards
+            if height[left] <= height[right]:
+                left += 1
+            else:
+                right -= 1
+
+        return max_area
 
 if __name__ == "__main__":
     sol = Solution()

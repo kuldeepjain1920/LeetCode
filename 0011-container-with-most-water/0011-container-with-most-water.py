@@ -18,6 +18,8 @@ class Solution:
         """
 
         ## Cleaner and more readable code
+        ## Runtime beats 52.08%
+        ## Memory beats 37.18%
         left, right = 0, len(height) - 1
         max_area = 0
 

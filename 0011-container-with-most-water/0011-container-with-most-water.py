@@ -17,6 +17,7 @@ class Solution:
         return area
         """
 
+        ##"""
         ## Cleaner and more readable code
         ## Runtime beats 52.08%
         ## Memory beats 37.18%
@@ -35,6 +36,22 @@ class Solution:
                 right -= 1
 
         return max_area
+        ##"""
+
+        """
+        ## Brute force version
+        ## Time limit exceeded
+        max_area = 0
+        n = len(height)
+
+        for i in range(n):
+            for j in range(1,n):
+                width = j-i
+                area = width * min(height[i], height[j])
+                max_area = max(max_area, area)
+        
+        return max_area
+        """
 
 if __name__ == "__main__":
     sol = Solution()

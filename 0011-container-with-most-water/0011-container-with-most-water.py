@@ -1,6 +1,6 @@
 class Solution:
     def maxArea(self, height: List[int]) -> int:
-        """
+        ##"""
         ## My version
         ## Runtime beats 92.11
         ## Memory beats 37.18%
@@ -15,11 +15,11 @@ class Solution:
                 left += 1
 
         return area
-        """
-
         ##"""
+
+        """
         ## Cleaner and more readable code
-        ## Runtime beats 52.08%
+        ## Runtime 54ms beats 52.08%
         ## Memory beats 37.18%
         left, right = 0, len(height) - 1
         max_area = 0
@@ -36,7 +36,7 @@ class Solution:
                 right -= 1
 
         return max_area
-        ##"""
+        """
 
         """
         ## Brute force version

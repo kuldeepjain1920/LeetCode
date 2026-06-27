@@ -1,9 +1,9 @@
 class Solution:
     def maxArea(self, height: List[int]) -> int:
         ##"""
-        ## My version
-        ## Runtime beats 92.11
-        ## Memory beats 37.18%
+        ## My version - Time: O(n) Space: O(1)
+        ## Runtime 58ms beats 92.11
+        ## Memory 29.66MB beats 37.18%
         left = 0
         right = len(height) - 1
         area = 0
@@ -18,6 +18,7 @@ class Solution:
         ##"""
 
         """
+        ## Time: O(n) Space: O(1)
         ## Cleaner and more readable code
         ## Runtime 54ms beats 52.08%
         ## Memory beats 37.18%
@@ -40,6 +41,7 @@ class Solution:
 
         """
         ## Brute force version
+        ## Time: O(n²) Space: O(1)
         ## Time limit exceeded
         max_area = 0
         n = len(height)
@@ -63,7 +65,8 @@ if __name__ == "__main__":
         ([1,2,3,4,5],6),
         ([6,5,4,3,2,1],9),
         ([1,1,1,10,1,1,1],6),
-        ([10,1,1,1,1,1,10],60)
+        ([10,1,1,1,1,1,10],60),
+        ([4,4,4,4],12)
     ]
     
     for nums, expected in test_cases:

@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/kuldeepjain1920/LeetCode/tree/master/0001-two-sum) |
 | [0011-container-with-most-water](https://github.com/kuldeepjain1920/LeetCode/tree/master/0011-container-with-most-water) |
+| [0042-trapping-rain-water](https://github.com/kuldeepjain1920/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/kuldeepjain1920/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/kuldeepjain1920/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0217-contains-duplicate](https://github.com/kuldeepjain1920/LeetCode/tree/master/0217-contains-duplicate) |
@@ -23,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/kuldeepjain1920/LeetCode/tree/master/0011-container-with-most-water) |
+| [0042-trapping-rain-water](https://github.com/kuldeepjain1920/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0125-valid-palindrome](https://github.com/kuldeepjain1920/LeetCode/tree/master/0125-valid-palindrome) |
 ## String
 |  |
@@ -32,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/kuldeepjain1920/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/kuldeepjain1920/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 ## Sorting
 |  |
@@ -58,4 +61,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/kuldeepjain1920/LeetCode/tree/master/0011-container-with-most-water) |
+## Stack
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/kuldeepjain1920/LeetCode/tree/master/0042-trapping-rain-water) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/kuldeepjain1920/LeetCode/tree/master/0042-trapping-rain-water) |
 <!---LeetCode Topics End-->

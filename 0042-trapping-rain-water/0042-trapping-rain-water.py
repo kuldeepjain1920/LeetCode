@@ -1,6 +1,5 @@
 class Solution:
     def trap(self, height: List[int]) -> int:
-        """
         ## Two pointers Time:O(N), Space O(1)
         ## Runtime 7 ms Beats 74.4%
         water = 0
@@ -24,10 +23,12 @@ class Solution:
                 right -= 1
 
         return water
+
         """
         ## Approach 2
         ## PREFIX-MAX ARRAYS Time:O(N) Space O(N)
-        ## 
+        ## Runtime 13 ms Beats 30.15
+        ## Memory 21.18 MB Beats 24.06%
         n = len(height)
         if n == 0: return 0
         left_max = [0] * n ## left_max[i] = max_height from 0..i
@@ -44,6 +45,7 @@ class Solution:
         return sum(
             min(left_max[i], right_max[i]) - height[i] for i in range(n)
         )
+        """
 
 if __name__ == "__main__":
     sol = Solution()

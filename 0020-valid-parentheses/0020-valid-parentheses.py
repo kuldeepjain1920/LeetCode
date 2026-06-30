@@ -2,6 +2,7 @@ class Solution:
     def isValid(self, s: str) -> bool:
         # Runtime 5 ms Beats 95%
         # Memory 19.19 MB Beats 92%
+        
         ## Early exit optimization for odd length string
         if len(s) % 2 != 0: return False
 
@@ -30,7 +31,12 @@ if __name__ == "__main__":
         ("", True), ## Empty String
         ("{", False), ## Single bracket Odd Length
         ("(((", False), ## Odd Length
-        ("]})}"), ## Only closing brackets
+        ("]})}", True), ## Only closing brackets
         ("[{([[[{{{((()))}}}]]])}]", True) ## Deeply nested  
     ]
+
+    for s, expected in test_cases:
+        output = sol.isValid(s)
+        status = "✅ PASS " if output == expected else "❌ FAIL"
+        print(f"{status} | s={s} => {output}")
         

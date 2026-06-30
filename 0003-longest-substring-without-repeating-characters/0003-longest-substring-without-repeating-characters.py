@@ -3,7 +3,7 @@ class Solution:
 
         ## Time O(n) and Space  O(min(n,charset)
         ## Runtime 8 ms Beats 87.88%
-        ## Memory 19.48MB beats 7.45%
+        ## Memory 19.48MB beats 29.91%
         ## hashmap implementation
         if len(s) == 0: return 0
 
@@ -23,7 +23,7 @@ class Solution:
         ## Set implementation
         ## Time is O(n) amortized, Space is O(min(n,charset))
         ## Runtime 15ms Beats 42.72%
-        ## Memory 19.37 MB Beats 29.91%
+        ## Memory 19.37 MB Beats 7.45%
         left = 0
         char_set = set()
         max_len = 0

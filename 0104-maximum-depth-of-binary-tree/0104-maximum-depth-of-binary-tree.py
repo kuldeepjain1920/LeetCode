@@ -41,8 +41,11 @@ class Solution:
         """
 
         ## DFS iterative
-        if not root: return 0
+        ## Time O(n) Space O(h) Stack (explicit)
+        ## Avoids Python's recursion limit
         
+        if not root: return 0
+
         stack = [(root, 1)] ## node, depth at this node
         max_d = 0
         while stack:
@@ -52,7 +55,7 @@ class Solution:
             if node.left: stack.append((node.left, d+1))
             if node.right: stack.append((node.right, d+1))
         return max_d
-        
+
         """
         ## BFS Iterative
         ## O(n) time, O(w) space w = width of the Tree; bottom row w=n/2

@@ -6,6 +6,10 @@ class Solution:
         ## Time O(M²*N), Space O(M*N)
         ## Runtime 287 ms Beats 45.71%
         ## Memory 20.62 MB Beats 45.03%
+        
+        ## Recognize it as BFS immediately — say "shortest path on implicit graph"
+        ## Implement standard BFS cleanly with the substitution loop
+        ## State O(M²·N) time and O(M·N) space and explain why
         word_set = set(wordList) # O(1) lookup 
         if endWord not in word_set: return 0
         if beginWord == endWord: return 1 # clarify this in interview

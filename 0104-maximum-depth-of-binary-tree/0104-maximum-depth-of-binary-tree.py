@@ -13,6 +13,20 @@ class Solution:
         tree, DFS uses O(n) stack space and risks a stack overflow, while BFS 
         uses O(1) queue space since each level has one node — BFS wins. 
         The right choice depends on the expected shape of the input tree.
+        All 4 approaches
+        #Approach           Time    Space   Key data structure
+        1. DFS Recursive    O(n)    O(h)    Call stack (implicit)
+        2. BFS Iterative    O(n)    O(w)    Queue (deque)
+        3. DFS Iterative    O(n)    O(h)    Stack (explicit)
+        4. Morris Traversal O(n)    O(1)    No extra space at all
+
+        ---------------------------------------------------------------------------------------------
+        Approach            When to use
+        ---------------------------------------------------------------------------------------------
+        DFS Recursive       Always lead with this — clearest, most concise
+        BFS Iterative       Offer when interviewer asks about skewed trees or stack overflow
+        DFS Iterative       Mention as "same as DFS recursive but avoids Python's recursion limit"
+        Morris Traversal    Only if interviewer explicitly asks for O(1) space — very rare
         """
 
         """
@@ -26,8 +40,24 @@ class Solution:
         return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
         """
 
-        ## BFS
-        ## O(n) time, O(w) space w = width of the Tree; bottom row w=n/2 
+        ## DFS iterative
+        if not root: return 0
+        
+        stack = [(root, 1)] ## node, depth at this node
+        max_d = 0
+        while stack:
+            node, d = stack.pop() #LIFO depth first
+            max_d = max(max_d, d)
+
+            if node.left: stack.append((node.left, d+1))
+            if node.right: stack.append((node.right, d+1))
+        return max_d
+        
+        """
+        ## BFS Iterative
+        ## O(n) time, O(w) space w = width of the Tree; bottom row w=n/2
+        ## Runtime 0 ms Beats 100%
+        ## Memory 20.45 MB Beats 5.10% 
         if not root: return 0
         queue, depth = deque([root]), 0
 
@@ -41,7 +71,7 @@ class Solution:
                 if node.right: queue.append(node.right)
         
         return depth
-
+        """
 
 if __name__ == "__main__":
     sol = Solution()

@@ -10,7 +10,8 @@ class Solution:
         ## DFS recursion
         ## Time: O(n) — every node visited once. 
         ## Space: O(h) — recursion stack, h = tree height (worst case O(n) for a skewed tree).
-        ## 
+        ## Runtime 0ms beats 100%
+        ## Memory 20.25 Beats 61.41
         if not root: return 0
         return (1 + max(self.maxDepth(root.left), self.maxDepth(root.right)))
         

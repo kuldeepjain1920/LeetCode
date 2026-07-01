@@ -8,6 +8,14 @@ class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
 
         """
+        "For a balanced tree, DFS uses O(log n) stack space versus BFS 
+        using O(n) queue space at the widest level — DFS wins. For a skewed 
+        tree, DFS uses O(n) stack space and risks a stack overflow, while BFS 
+        uses O(1) queue space since each level has one node — BFS wins. 
+        The right choice depends on the expected shape of the input tree.
+        """
+
+        """
         ## DFS recursion
         ## Time: O(n) — every node visited once.
         ## Space: O(h) — recursion stack, h = tree height (worst case O(n) for a skewed tree).
@@ -19,6 +27,7 @@ class Solution:
         """
 
         ## BFS
+        ## O(n) time, O(w) space w = width of the Tree; bottom row w=n/2 
         if not root: return 0
         queue, depth = deque([root]), 0
 

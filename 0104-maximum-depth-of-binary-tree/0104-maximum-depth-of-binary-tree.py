@@ -43,6 +43,8 @@ class Solution:
         ## DFS iterative
         ## Time O(n) Space O(h) Stack (explicit)
         ## Avoids Python's recursion limit
+        ## Run time O ms Beats 100%
+        ## Memory 20.37 MB Beats 24.54% 
         
         if not root: return 0
 

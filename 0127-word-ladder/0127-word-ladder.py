@@ -1,5 +1,11 @@
 class Solution:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
+        ## Standard BFS, 
+        ## M = length of each word
+        ## N = number of words in the wordList
+        ## Time O(M²*N), Space O(M*N)
+        ## Runtime 287 ms Beats 45.71%
+        ## Memory 20.62 MB Beats 45.03%
         word_set = set(wordList) # O(1) lookup 
         if endWord not in word_set: return 0
         if beginWord == endWord: return 1 # clarify this in interview
@@ -11,8 +17,11 @@ class Solution:
             word, steps = queue.popleft()
             if word == endWord: return steps
 
-            for i in range(len(word)): # try each position
+            for i in range(len(word)): # try each position; 
+            ## For each word dequeued, generate all neighbor M positions * 26 letter
+            ## O(M*26)
                 for c in "abcdefghijklmnopqrstuvwxyz":
+                    ## Each candidate costs O(M) to construct
                     next_word = word[:i] + c + word[i+1:]
                     if next_word == endWord: return steps + 1
                     if next_word in word_set and next_word not in visited:

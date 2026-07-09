@@ -1,3 +1,64 @@
+# 👨‍💻 Kuldeep Jain — LeetCode DSA Prep
+
+**Senior SDET / QA Lead** | 15+ years in financial messaging (SWIFT, Bank of America)  
+Transitioning toward AI/ML Engineering | Student @ CSTU AI & Data Science Program (2026)  
+✅ Google Hiring Assessment passed (valid 24 months)
+
+---
+
+## 🎯 Study Approach
+
+Pattern-based study — understanding the *why* behind each algorithm,  
+not just memorizing solutions. Each problem is studied through:
+
+- **Pattern recognition** — identify trigger words → map to skeleton
+- **Core insight** — articulate the algorithm in one sentence before coding  
+- **Complexity analysis** — time AND space, with trade-off reasoning
+- **Edge case review** — QA instinct applied systematically
+
+---
+
+## 🗺️ Pattern Families Mastered
+
+| Pattern | Key Problems | Core Skeleton |
+|---|---|---|
+| Hash Map | Two Sum, Group Anagrams, Longest Consecutive | `defaultdict(list)` + canonical key |
+| Two Pointers | Container With Most Water, Trapping Rain Water | `left, right` from both ends |
+| Sliding Window | Longest Substring Without Repeating Chars | `last_seen[ch] >= left` check |
+| Stack | Valid Parentheses | push open, pop+match on close |
+| BFS | Word Ladder, Level Order Traversal, Max Depth | `deque` + `len(queue)` snapshot |
+| DFS | Max Depth Binary Tree | `1 + max(left, right)` recursion |
+| Prefix/Suffix | Product of Array Except Self | two-pass, O(1) extra space |
+
+---
+
+## 📊 Progress Tracker
+
+| # | Problem | Pattern | Difficulty | Status |
+|---|---|---|---|---|
+| 1 | Two Sum | Hash Map | Easy | ✅ |
+| 3 | Longest Substring Without Repeating Chars | Sliding Window | Medium | ✅ |
+| 11 | Container With Most Water | Two Pointers | Medium | ✅ |
+| 20 | Valid Parentheses | Stack | Easy | ✅ |
+| 42 | Trapping Rain Water | Two Pointers + Prefix Max | Hard | ✅ |
+| 49 | Group Anagrams | Hash Map | Medium | ✅ |
+| 102 | Binary Tree Level Order Traversal | BFS | Medium | ✅ |
+| 104 | Maximum Depth of Binary Tree | DFS / BFS | Easy | ✅ |
+| 121 | Best Time to Buy and Sell Stock | Greedy | Easy | ✅ |
+| 127 | Word Ladder | BFS on Implicit Graph | Hard | ✅ |
+| 128 | Longest Consecutive Sequence | Hash Set | Medium | ✅ |
+| 206 | Reverse Linked List | Linked List | Easy | ✅ |
+| 217 | Contains Duplicate | Hash Set | Easy | ✅ |
+| 238 | Product of Array Except Self | Prefix/Suffix | Medium | ✅ |
+| 242 | Valid Anagram | Hash Map | Easy | ✅ |
+
+---
+
+*Auto-synced via [LeetHub v2](https://github.com/arunbhardwaj/LeetHub-2.0)*  
+*Problems below organized by LeetCode topic tags*
+
+---
+
 # LeetCode
 A collection of LeetCode questions to ace the coding interview! - Created using [LeetHub v2](https://github.com/arunbhardwaj/LeetHub-2.0)
 
